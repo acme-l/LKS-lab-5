@@ -16,6 +16,7 @@ fetch("movies.json")
                 '<div><label><input type="checkbox" id="' + movieFile.results[i].id +
                 '"><span class="label-text">watch it later</span></label></div>';
             listItem.innerHTML += "Rate: " + movieFile.results[i].vote_average;
+            listItem.innerHTML += "<br>Release: " + movieFile.results[i].release_date;
             listItem.innerHTML += '<div class="imageBlock"><img src=' + url + '></div>';
             listItem.innerHTML += '<div>' + movieFile.results[i].overview + '</div>';
 
